@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
 
     <title>Canes</title>
 </head>
@@ -27,8 +28,8 @@
             <h1>Canes</h1>
         </div>
 
-        <button id="button__theme">
-            <span class="material-symbols-outlined">
+        <button id="button__theme" onclick="changeTheme()">
+            <span class="material-symbols-outlined" id="buttonChange">
             dark_mode
         </span>
      </button>
@@ -44,39 +45,43 @@
             </div>
         </section>
 
-        <section>
+        <section class="search__menu">
             <h3>O que você procura?</h3>
 
-            <i>search</i>
-            <input type="text" placeholder="Digite aqui o que você procura">
+            <div class="search">
+                <i>search</i>
+                <input type="text" placeholder="Digite aqui o que você procura">
+            </div>
         </section>
 
         <section class="courses">
             <h3>Cursos em destaque</h3>
 
-            <div class="card">
+            <article class="card">
                 <img src="./assets/informatica.png" alt="imagem do curso de informática">
                 <h3>Técnico em Informática</h3>
-            </div>
+            </article>
 
-            <div class="card">
+            <article class="card">
                 <img src="./assets/enfermagem.png" alt="imagem do curso de enfermagem">
                 <h3>Técnico em Enfermagem</h3>
-            </div>
+            </article>
 
-            <div class="card">
+            <article class="card">
                 <img src="./assets/logistica.png" alt="imagem do curso de logística">
                 <h3>Técnico em Logística</h3>
-            </div>
+            </article>
         </section>
 
         <section id="button__courses">
-            <div>
-                <button>Beleza</button>
-                <button>Design</button>
-                <button>Negócios</button>
-                <button>Tecnologia</button>
-                <button>Saúde</button>
+            <h3>Cursos por área</h3>
+
+            <div class="buttons">
+                <button id="beleza">Beleza</button>
+                <button id="design">Design</button>
+                <button id="negocios">Negócios</button>
+                <button id="tecnologia">Tecnologia</button>
+                <button id="saude">Saúde</button>
             </div>
 
             <a>Clique aqui para ver todos os cursos</a>
